@@ -1,5 +1,6 @@
 # Character Picture Grid
 # Use the grid variable to print a heart-shaped image, like this:
+
 # ..OO.OO..
 # .OOOOOOO.
 # .OOOOOOO.

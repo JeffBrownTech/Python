@@ -1,3 +1,10 @@
+# Comma Code
+
+# Write a function that takes a list value and returns a string with all the items separated by a comma and space.
+# For the last item in the list, add 'and'
+# Example input: theList = ['apples', 'bananas', 'oranges', 'watermelons']
+# Example output: apples, bananas, oranges, and watermelons
+
 def addCommas(itemList):
     outputString = ''
 
@@ -7,14 +14,14 @@ def addCommas(itemList):
         else:
             outputString = outputString + itemList[item] + ', '
     
-    print(outputString)
+    return outputString
 
 
 theList = ['apples', 'bananas', 'oranges', 'watermelons']
-addCommas(theList)
+print(addCommas(theList))
 
 theList = ['bears', 'beets', 'battlestar galactica']
-addCommas(theList)
+print(addCommas(theList))
 
 theList = ['football', 'baseball', 'soccer', 'basketball', 'hockey', 'tennis', 'golf']
-addCommas(theList)
+print(addCommas(theList))
