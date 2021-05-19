@@ -1,6 +1,6 @@
 # Fantasy Game Inventory
 # Write a function to display a player's inventory in the fantasy game
-# Write a function 
+# Write a function to add to player's inventory after slaying the dragon
 
 def displayInventory(inventory):
     totalItems = 0
