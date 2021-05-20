@@ -10,7 +10,7 @@ def printBoard(board):
 
 def computerMove():
     print('\nThe computer is making a move...')
-    time.sleep(random.randint(1,5))
+    time.sleep(random.randint(2,5))
     index = random.randint(0, len(openMoves) -1)
     print('\nThe computer chose space ' + openMoves[index] + '.')
     return openMoves[index]
