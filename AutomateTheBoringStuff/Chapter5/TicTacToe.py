@@ -32,7 +32,9 @@ theBoard = {'1': '1', '2': '2', '3': '3',
 
 openMoves = ['1','2','3','4','5','6','7','8','9']
 
+print('\n***********************************')
 print('***** Welcome to Tic-Tac-Toe! *****')
+print('***********************************\n')
 
 while True:
     players = input('1 or 2 players? ')
@@ -75,7 +77,7 @@ for n in range(9):
         break
     else:
         if n == 8:
-            print('\nNo one won! It\'s a draw!')
+            print('\nNo winners here! It\'s a draw!')
         elif turn == 'X':
             currentPlayer = player2Name
             turn = 'O'
