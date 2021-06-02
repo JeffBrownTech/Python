@@ -24,14 +24,14 @@ text = str(pyperclip.paste())
 matches = []
 
 for groups in phoneRegex.findall(text):
-    if groups[1] == '':                                 # Checks for no area code
-        phoneNum = '-'.join([groups[3], groups[5]])
-    elif groups[1][0] == '(':                           # Check for parenthesis in first character of area code
-        phoneNum = '-'.join([groups[3], groups[5]])
-        phoneNum = ' '.join([groups[1], phoneNum])
-    else:                                               # All other phone numbers with area code and dashes
-        phoneNum = '-'.join([groups[1], groups[3], groups[5]])
-    if groups[8] != '':                                 # Contains extension
+    if groups[1] == '':                                         # Checks for no area code
+        phoneNum = '-'.join([groups[3], groups[5]])             # Joins telephone prefix and line number by dashes
+    elif groups[1][0] == '(':                                   # Check for parenthesis in first character of area code
+        phoneNum = '-'.join([groups[3], groups[5]])             # Join telephone prefix and line number by dashes
+        phoneNum = ' '.join([groups[1], phoneNum])              # Join area code in parenthesis to phone number with a space
+    else:                                                       # All other phone numbers with area code and dashes
+        phoneNum = '-'.join([groups[1], groups[3], groups[5]])  # Join all three parts by dashes
+    if groups[8] != '':                                         # Contains extension
         phoneNum += ' x' + groups[8]
     matches.append(phoneNum)
 
