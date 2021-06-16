@@ -1,5 +1,5 @@
 #! python3
-# PhoneAndEmail.py - Finds Web site URLs starting with http:// or https://.
+# Url.py - Finds Web site URLs starting with http:// or https://.
 
 import pyperclip, re
 
